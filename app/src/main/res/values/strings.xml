@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FinalSubsAnBasic</string>
+    <string name="title_activity_detail_list">DetailList</string>
+    <string name="title_activity_about">AboutActivity</string>
+</resources>
