@@ -1,5 +1,6 @@
 package com.android.finalsubsanbasic
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -30,7 +31,8 @@ class MainActivity : AppCompatActivity() {
         rvFood.adapter = listHeroAdapter
         listHeroAdapter.setOnItemClickCallback(object : ListAdapter.OnItemClickCallback {
             override fun onItemClicked(data: Food) {
-                showSelectedHero(data)
+              val move =Intent(this@MainActivity,DetailList::class.java)
+                startActivity(move)
             }
         })
     }
